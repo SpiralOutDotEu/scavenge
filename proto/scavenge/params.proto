@@ -1,0 +1,12 @@
+syntax = "proto3";
+package spiraloutdoteu.scavenge.scavenge;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/SpiralOutDotEu/scavenge/x/scavenge/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
