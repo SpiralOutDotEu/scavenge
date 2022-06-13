@@ -16,9 +16,9 @@ var _ = strconv.Itoa(0)
 
 func CmdCommitSolution() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "commit-solution [solution-hash] [solution-scavenger-hash]",
+		Use:   "commit-solution [solution]",
 		Short: "Broadcast message commit-solution",
-		Args:  cobra.ExactArgs(2),
+		Args:  cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) (err error) {
 			clientCtx, err := client.GetClientTxContext(cmd)
 			if err != nil {
